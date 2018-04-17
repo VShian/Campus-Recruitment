@@ -22,6 +22,7 @@ class Company(models.Model):
 class Job(models.Model):
 	pos = models.CharField(max_length=64, unique=False)
 	company = models.ForeignKey('Company', on_delete=models.CASCADE)
+	skills = models.CharField(max_length=264, unique=False)
 
 	class Meta:
 		unique_together = ('pos', 'company')
