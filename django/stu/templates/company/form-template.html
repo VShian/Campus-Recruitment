@@ -1,0 +1,13 @@
+{% for field in form %}
+<!-- <div class="mdl-textfield mdl-js-textfield"> -->
+<center>
+	<div class="mdl-textfield">
+		<label>{{ field.label_tag }}</label>
+		{{ field }}
+	</div>
+     <!--<input class="mdl-textfield__input" type="text" id={{field.label_tag}} name={{field.label_tag}}>-->
+     <!--<label class="mdl-textfield__label" for={{field.label_tag}}>{{ field.label_tag }}</label>-->
+<!-- </div> -->
+</center>
+
+{% endfor %}
