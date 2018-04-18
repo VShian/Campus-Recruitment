@@ -16,7 +16,9 @@ class Student(models.Model):
 
 class Company(models.Model):
 	name = models.CharField(max_length=128, unique=True)
+	email = models.CharField(max_length=128,unique=True)
 	about = models.CharField(max_length=512, unique=False)
+	password = models.CharField(max_length=128, unique=False)
 
 	def __str__(self):
 		return self.name

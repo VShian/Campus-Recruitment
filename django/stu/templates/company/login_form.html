@@ -1,11 +1,11 @@
 {% extends 'company/base.html' %}
 {% block body %}
-
 	<form id="login-form" action="{% url 'stu:check' %}" method="POST">
 	<div class="mdl-card__supporting-text">
         {% csrf_token %}
 		<!-- {% include 'company/login-form-template.html' %} -->
 		<center>
+			<p style="color: red">{{msg}}</p>
 			<div class="mdl-textfield mdl-js-textfield">
 				<span>
 					&nbsp
