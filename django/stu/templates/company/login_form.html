@@ -1,0 +1,35 @@
+{% extends 'company/base.html' %}
+{% block body %}
+
+	<form id="login-form" action="{% url 'stu:check' %}" method="POST">
+	<div class="mdl-card__supporting-text">
+        {% csrf_token %}
+		<!-- {% include 'company/login-form-template.html' %} -->
+		<center>
+			<div class="mdl-textfield mdl-js-textfield">
+				<span>
+					&nbsp
+				</span>
+				<label class="mdl-textfield__label">Email:</label>
+				<input class="mdl-textfield__input" type="email" name="email" id="email"><br/>
+			</div><br>
+		  	<div class="mdl-textfield mdl-js-textfield">
+		  		<span>
+					&nbsp
+				</span>
+				<label class="mdl-textfield__label">Password</label>
+				<input class="mdl-textfield__input" type="password" name="password" id="password">
+		  	</div>
+		</center>
+	</div>
+	<div class="mdl-card__actions">
+		<!-- <a><button class="mdl-button" type="submit">Submit</button></a> -->
+		<a class="mdl-button">
+			<button class="mdl-button">Log In</button>
+		</a>
+	</div>
+	</form>
+<!-- Simple Textfield -->
+<form action="#">
+</form>
+{% endblock %}

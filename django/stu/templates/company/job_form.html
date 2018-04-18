@@ -1,0 +1,17 @@
+{% extends 'company/base.html' %}
+{% block body %}
+
+	<form id="job-add-form" action="{% url 'stu:job-added' %}" method="POST">
+	<div class="mdl-card__supporting-text">
+        {% csrf_token %}
+		{% include 'company/form-template.html' %}
+	</div>
+	<div class="mdl-card__actions">
+		<!-- <a><button class="mdl-button" type="submit">Submit</button></a> -->
+		<a class="mdl-button">
+			<button>Submit</button>
+		</a>
+	</div>
+	</form>
+
+{% endblock %}
