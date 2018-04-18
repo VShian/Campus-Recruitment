@@ -1,0 +1,32 @@
+for login form
+
+INPUT					OUTPUT
+
+emailid       			error
+emailid@g@    			error
+emailid@g.c. 			error
+12345..					error
+emailid.v 				error
+emailid@game 			No error
+emailid@gmail.com 		No error
+email123@g.c 			No error
+emailid~%& 				error
+emailid~%&,. 			error
+EMAILID@GMAIL.COM 		error
+eMailid@gmail.com 		error
+
+
+
+for Post Job form
+
+INPUT					OUTPUT
+
+123457$3%				error
+@#$*					error
+developer				No error
+MBA						No error
+software engineer 		No errror
+developer13253$ 		error
+dev# 					error
+
+
